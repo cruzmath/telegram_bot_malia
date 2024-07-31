@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext, Application
 
 # Token do Bot do BotFather
-TOKEN = Telegram_token
+TOKEN = secrets.TELEGRAM_TOKEN
 
 async def start(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text('Bem-vindo ao Bot pra Malia! Use /help para ver todos os comandos.')
